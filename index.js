@@ -148,8 +148,154 @@ dogs.push('Labrador', 'Husky')
 dogs.sort();
 console.log(dogs);
 
-let race = {
+let dog = [
+    Akita = {
+       race : dogs[0],
+         origin :  'Japon',
+    },
+    Bouvier = {
+        race : dogs[1],
+         origin :  'Suisse',
+    },
+
+    Beagle = {
+        race : dogs[2],
+         origin :  'Angleterre',
+    },
+
+    Labrador = {
+        race : dogs[3],
+         origin :  'Canada',
+    },
+
+    Husky = {
+        race : dogs[4],
+         origin :  'Sibérie'
+    }
+]
     
-}
+
+console.log(dog);
+
 
 //User object
+
+// let user = {
+//     firstName: 'Baptiste',
+//     lastName: 'Quint',
+//     fullName1: undefined,
+//     age: 15,
+//     majeur: undefined,
+
+//     //Méthodes
+//     fullName(){
+//         let fullN = this.firstName + ' ' + this.lastName ;
+//         console.log(fullN);
+//         this.fullName1 = fullN;
+//     }
+// }
+
+// function isMajor() {
+//     let years = user.age;
+//     let ans = undefined;
+//     if(years <= 17){
+//         ans = false;
+//     } else if (years >= 18){
+//         ans = true;
+//     }
+//     user.majeur = ans
+//     console.log(ans);
+//     console.log(user.majeur);
+//     console.log(user);
+// } 
+
+// user.fullName();
+// isMajor();
+
+
+
+let user = {
+    // Propriétés
+    firstName: 'Baptiste',
+    lastName: 'Quint',
+    age: 15,
+    majeur: undefined,
+    // Méthodes
+    fullName() {
+      return this.firstName +' '+ this.lastName;
+    },
+    isMajor() {
+        if (this.age <= 17){
+            return this.majeur = false;
+        } else {
+            return this.majeur = true;
+        }
+    }
+  }
+
+  console.log(user.fullName());
+  console.log(user.isMajor());
+
+
+  //Startup Book
+
+const entrepreneurs = [
+    { first: 'Steve', last: 'Jobs', year: 1955 },
+    { first: 'Oprah', last: 'Winfrey', year: 1954 },
+    { first: 'Bill', last: 'Gates', year: 1955 },
+    { first: 'Sheryl', last: 'Sandberg', year: 1969 },
+    { first: 'Mark', last: 'Zuckerberg', year: 1984 },
+    { first: 'Beyonce', last: 'Knowles', year: 1981 },
+    { first: 'Jeff', last: 'Bezos', year: 1964 },
+    { first: 'Diane', last: 'Hendricks', year: 1947 },
+    { first: 'Elon', last: 'Musk', year: 1971 },
+    { first: 'Marissa', last: 'Mayer', year: 1975 },
+    { first: 'Walt', last: 'Disney', year: 1901 },
+    { first: 'Larry', last: 'Page', year: 1973 },
+    { first: 'Jack', last: 'Dorsey', year: 1976 },
+    { first: 'Evan', last: 'Spiegel', year: 1990 },
+    { first: 'Brian', last: 'Chesky', year: 1981 },
+    { first: 'Travis', last: 'Kalanick', year: 1976 },
+    { first: 'Marc', last: 'Andreessen', year: 1971 },
+    { first: 'Peter', last: 'Thiel', year: 1967 }
+  ];
+
+//  entrepreneurs.forEach(year => console.log(year));
+
+ //console.log(entrepreneurs.every());
+ 
+ function agefilter(entrepreneurs){
+    
+    if(entrepreneurs.year >=1970 && entrepreneurs.year <=1979){
+        console.log(entrepreneurs);
+    }
+    //  else {
+    //     console.log("Non");
+    // }
+ }
+// agefilter();
+
+entrepreneurs.forEach(agefilter);
+
+ 
+//Library
+
+//Exercice 1 DOM
+
+let originalText = document.querySelector('input.original');
+let copyText = document.querySelector('input.copy');
+console.log(originalText);
+console.log(copyText);
+let word = "danger";
+let copyWord = undefined;
+originalText.innerHTML = word;
+
+function verifyAnswer(event) {
+    // if (word === copyWord) {
+    //     console.log("bien joué");
+    // } else {
+    //     console.log("c'est perdu");
+    // }
+}
+verifyAnswer();
+
