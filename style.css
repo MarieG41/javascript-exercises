@@ -1,0 +1,25 @@
+.text{
+  margin-bottom: 10px;
+}
+table,
+td {
+    margin-top: 20px;
+  border: 1px solid #333;
+}
+
+thead,
+tfoot {
+  background-color: #d3d2d2;
+  color: #000;
+}
+
+.carre{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+}
+
+button{
+  margin-bottom: 20px;
+}
