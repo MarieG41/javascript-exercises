@@ -335,5 +335,24 @@ bouge.addEventListener('click', function() {
 
 //Gallerie Photo
 
+//importer les photos avec le DOM
+let smallImages = document.querySelectorAll('.small');
+let bigImages = document.querySelector('.big');
+
+//Au clic sur une petite image elle devient grande dans la zone en face
+smallImages.forEach(image => {
+    image.addEventListener('click', displayImage);
+});
 
 
+function displayImage(event){
+    bigImages.src = event.target.src;
+
+    smallImages.forEach(image => {
+        image.classList.remove('focus');
+    });
+    event.target.classList.add('focus');
+}
+    //lorsque l'on clique sur une petite image elle vient prendre la classe "present" et perd sa classe "hidden"
+    //la photo afficher auparavant en grand prend la classe "hidden" et n'est donc plus visible
+    //liseré rouge qui s'affiche quand on sélectionne la petite image
