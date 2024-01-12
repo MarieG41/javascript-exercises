@@ -58,3 +58,47 @@ button{
 .img-principale{
   position: absolute;
 }
+
+.body-calcul{
+  background-image: url(img/pexels-ron-lach-10526880.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+.calculatrice{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+select{
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+select:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+#first-nb, #second-nb{
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.calcul{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+.calcul:hover{
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
