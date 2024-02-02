@@ -334,14 +334,25 @@ function leastRentedBook() {
 leastRentedBook(books);
 
 function bookId() {
-    books.forEach(id => {
-        if (id in books == 873495) {
-            console.log("L'id " + `${books.id}` + "est " + `${books.title}`);
+    books.forEach(book => {
+        if (book.id == 873495) {
+            console.log("L'id 873495 " + "est le livre " + `${book.title}`);
         }
     })
 }
 
 bookId(books)
+
+function deleteBook() {
+    books.forEach(book => {
+        if (book.id == 133712) {
+            books.pop(133712)
+            console.log("Le livre supprimé est " + `${book.title}`);
+        }
+    })
+}
+deleteBook(books.pop(133712));
+
 //Copieur
 
 //Eléments appelés avec le DOM
